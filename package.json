@@ -1,11 +1,57 @@
 {
   "name": "bingwu-request-manager",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "一个轻量级的请求管理器，用于解决网络请求竞态问题",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "lint": "eslint src",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
   },
+  "keywords": [
+    "request",
+    "race-condition",
+    "async",
+    "fetch",
+    "promise",
+    "request-manager"
+  ],
   "author": "",
-  "license": "ISC",
-  "description": ""
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/bingwu-request-manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/bingwu-request-manager/issues"
+  },
+  "homepage": "https://github.com/yourusername/bingwu-request-manager#readme",
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.3",
+    "@babel/preset-typescript": "^7.18.6",
+    "@rollup/plugin-babel": "^6.0.0",
+    "@rollup/plugin-commonjs": "^23.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-typescript": "^9.0.1",
+    "@types/jest": "^29.1.2",
+    "eslint": "^8.25.0",
+    "jest": "^29.1.2",
+    "rollup": "^2.79.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "ts-jest": "^29.3.2"
+  }
 }

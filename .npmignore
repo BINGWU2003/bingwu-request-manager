@@ -1,0 +1,36 @@
+# 源文件
+src/
+rollup.config.js
+tsconfig.json
+.eslintrc
+jest.config.js
+.prettierrc
+
+# 开发文件
+node_modules/
+.git/
+.github/
+.vscode/
+.idea/
+.gitignore
+.travis.yml
+.nyc_output
+coverage/
+
+# 测试相关
+__tests__/
+*.test.ts
+*.spec.ts
+test/
+
+# 不需要的例子
+examples/
+
+# 日志和临时文件
+*.log
+logs/
+tmp/
+temp/
+
+# 打包文件
+.size-snapshot.json 
