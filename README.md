@@ -2,6 +2,11 @@
 
 一个轻量级的请求管理器，用于解决网络请求竞态问题。
 
+## demo
+
+- demo源代码：https://github.com/BINGWU2003/bing-wu-demo/blob/main/src/views/bingwu-request-manager/BasicView.vue
+- 演示地址：https://bing-wu-demo.netlify.app/#/bingwu-request-manager/basic
+
 ## 背景
 
 在前端应用中，特别是在快速切换页面、选项卡或频繁搜索的场景下，很容易出现请求竞态问题，即后发出的请求先返回，而先发出的请求后返回，导致界面显示错误的数据。
